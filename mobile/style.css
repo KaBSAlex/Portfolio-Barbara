@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+body {
+    background-image: url(../img/bkg.jpg);
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+#home {
+    background-image: url(../img/bkg_room_Crop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    border-radius: 0 0 8rem 8rem;
+
+    box-shadow: 4px 28px 114px 15px rgba(199,183,155,1);
+}
+
+.nav_bar ul li {
+    background-color: rgb(201, 197, 193);
+
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    padding: 1rem;
+    width: 10rem;
+
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+
+.position_home {
+    margin-top: 2rem;
+    max-width: 96%;
+}
+
+.img_logo {
+    width: 90%;
+    border-radius: 10rem;
+    margin-bottom: 2rem;
+}
+
+.arrow_down {
+    justify-content: center;
+    text-align: center;
+}
+
+.arrow_down img {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+/* SECTION ABOUT */
+
+.line_section_start {
+    border: 5px solid rgb(201, 197, 193);
+    padding: 4px;
+    height: 2rem;
+    border-bottom: none;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: -1px -7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.line_section_end {
+    border: 5px solid rgb(193, 197, 201);
+    padding: 4px;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    height: 2rem;
+    margin-top: 8rem;
+}
+
+#about {
+    height: 100vh;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin: 4rem;
+}
+
+.text_about {
+    text-align: left;
+    width: 0 auto;
+    display: flex;
+}
+
+.text_about p {
+    max-width: 50%;
+    margin-right: 1rem;
+}
+
+.img_about {
+    width: 40%;
+    border-radius: 0 2rem 0 5rem;
+}
+
+/* CAROUSEL */  
+  
+.item {
+    width: 70%;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+}
+
+.container_carousel {
+    position: relative;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    text-align: center;
+    width: 4%;
+    border: none;
+    background-color: rgb(201, 197, 193);
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 4%;
+    border: none;
+    background-color: rgb(201, 197, 193);
+    background: linear-gradient(to right, transparent 0%, black 200%);
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+/* SECTION PROJECT */
+
+#project {
+    height: 100vh;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#project h1 {
+    margin-bottom: 1rem;
+}
+
+.align_text_img {
+    position: relative;
+}
+
+.t1 {
+    position: absolute;
+    background-color: rgba(250, 235, 215, 0.568);
+    top: 10rem;
+    width: 100%;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+.t2 {
+    top: 28rem;
+    position: absolute;
+    background-color: rgba(250, 235, 215, 0.568);
+    padding: 1.6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.img_projects {
+    position: absolute;
+    width: 100%;
+    height: 15rem;
+}
+
+.img_projects_1 {
+    position: absolute;
+    width: 100%;
+    height: 15rem;    
+    margin-top: 18rem;
+}
+
+/* SECTION CONTACT */
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.img_contact {
+    width: 100%;
+}
+
+.text_contact {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.text_contact p {
+    margin: 2rem;
+}
+
+.btn_contact  {
+    text-align: center;
+}
+
+.btn_contact button {
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    background-color: rgb(105, 214, 123);
+    box-shadow: 0px 0px 41px 0px rgba(0,0,0,0.75);
+}
+
+.img_logo_contact {
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.logo_insta {
+    width: 15%;
+    margin-bottom: 1rem;
+}
+
+.map {
+    width: 90%;
+    height: 10rem;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(212, 212, 224);
+}
+
+footer h2 {
+    margin-top: 30%;
+}
+
