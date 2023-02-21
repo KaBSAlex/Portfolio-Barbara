@@ -40,10 +40,11 @@ section {
     padding: calc(5rem + var(--header-height)) 0;
 }
 
-
 .container {
     width: 100%;
     height: auto;
+    margin: 0 auto;
+    max-width: 93%;
     justify-content: center;
 }
 
@@ -71,12 +72,10 @@ section {
     margin-bottom: 1rem;
     box-shadow: 2px 2px 10px 3px rgb(15, 15, 15);
 
-
     padding: 1rem;
     width: 10rem;
 
     border-radius: 2rem;
-
 }
 
 .position_home {
@@ -240,7 +239,8 @@ section {
     text-align: center;
     opacity: 0;
     width: 90%;
-    padding: 5.6rem 0;
+    max-width: 90%;
+    padding: 5.2rem 0;
     transition: padding 0.5s;
 }
 
@@ -272,7 +272,7 @@ section {
 }
 
 .text_contact {
-    font-size: 1.5rem;
+    font-size: 100%;
     text-align: center;
     background-color: white;
     border: 1px solid black;
