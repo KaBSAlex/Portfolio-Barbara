@@ -39,6 +39,7 @@ a {
 
 section { 
     padding: calc(2rem + var(--header-height)) 0;
+    height: 100vh;
 
 }
 
@@ -60,7 +61,7 @@ section {
     justify-content: center;
 
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     margin: 0 auto;
     border-radius: 0 0 8rem 8rem;
 
@@ -126,7 +127,6 @@ section {
 #about {
     width: 100%;
     max-width: 90%;
-    height: 60vh;
     margin: 0 auto;
 }
 
